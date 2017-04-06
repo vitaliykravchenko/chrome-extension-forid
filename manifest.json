@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Hello World",
+  "description": "Hello World",
+  "version": "1.0",
+  "oauth2": {
+    "client_id": "463650199852-fsmma70g9tf7kph66g2pci12p13lpcvv.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/contacts",
+      "https://www.googleapis.com/auth/contacts.readonly",
+      "https://www.googleapis.com/auth/plus.login",
+      "https://www.googleapis.com/auth/user.addresses.read",
+      "https://www.googleapis.com/auth/user.birthday.read",
+      "https://www.googleapis.com/auth/user.emails.read",
+      "https://www.googleapis.com/auth/user.phonenumbers.read",
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "identity",
+    "https://*/*"
+  ],
+  "content_security_policy": "script-src 'self' https://apis.google.com/; object-src 'self'"
+}
+
